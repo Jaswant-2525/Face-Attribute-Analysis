@@ -29,39 +29,34 @@ CelebA is automatically downloaded using torchvision.datasets.CelebA.
 
 ⚙️ **Methodology**
 
-1️⃣ Data Preprocessing
+1️⃣ **Data Preprocessing**
 1. Images resized to 224×224
 2. Converted to tensors
 3. Normalized using ImageNet mean & std
 4. Prepared using PyTorch transforms
 
-2️⃣ Feature Extraction (ResNet50)
+2️⃣ **Feature Extraction (ResNet50)**
 1.  pretrained ResNet50 model (without its classifier layer) is used
 2. Each image produces a 2048-D embedding vector
-3. These embeddings capture:
-4. Expression
-5. Age
-6. Lighting
-7. Gender
-8. Hair style
+3. These embeddings capture: Expression, Age, Lighting, Gender, and Hair style
 
-3️⃣ Dimensionality Reduction (PCA)
+3️⃣ **Dimensionality Reduction (PCA)**
 1. PCA reduces embeddings from 2048 → 50 dimensions
 2. Removes redundant information
 3. Speeds up clustering
 4. Improves cluster separability
 
-4️⃣ Clustering (K-Means)
+4️⃣ **Clustering (K-Means)**
 1. K-Means groups similar faces into K clusters
 2. Cluster count selected via Elbow Method
 3. Each feature vector assigned to nearest centroid
 
-5️⃣ Visualization
+5️⃣ **Visualization**
 1. t-SNE converts reduced embeddings → 2D
 2. Clusters plotted with different colors
 3. 12 random images shown per cluster to inspect visual similarity
 
-6️⃣ Evaluation Metrics
+6️⃣ **Evaluation Metrics**
 1. Silhouette Score	Measures compactness & separation
 2. Davies–Bouldin Index	Lower = better cluster separation
 3. Calinski–Harabasz Score	Higher = better clustering
@@ -69,7 +64,6 @@ CelebA is automatically downloaded using torchvision.datasets.CelebA.
 🧠 **Cluster Interpretations**
 
 **Cluster 0**
-
 Mostly male faces, short hair, no beard, formal appearance.
 
 **Cluster 1**

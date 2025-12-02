@@ -24,17 +24,18 @@ Evaluating clustering quality using internal & external metrics
 This is extremely useful in real-world applications like photo organization, face retrieval, demographic analysis, and unsupervised face recognition.
 
 📂 Dataset: CelebA
-Property	Details
-Images	202,599 aligned face images
-Identities	10,177 unique people
-Facial Attributes	40 binary facial attributes (Smiling, Young, Male, Blond Hair, etc.)
-Facial Landmarks	5 points (eyes, nose, mouth corners)
-Image Size	178 × 218
-Used in this project	20,000 images (subset for computational efficiency)
+1. Property	Details
+2. Images	202,599 aligned face images
+3. Identities	10,177 unique people
+4. Facial Attributes	40 binary facial attributes (Smiling, Young, Male, Blond Hair, etc.)
+5. Facial Landmarks	5 points (eyes, nose, mouth corners)
+6. Image Size	178 × 218
+7. Used in this project	20,000 images (subset for computational efficiency)
 
 CelebA is automatically downloaded using torchvision.datasets.CelebA.
 
 ⚙️ Methodology
+
 1️⃣ Data Preprocessing
 
 Images resized to 224×224

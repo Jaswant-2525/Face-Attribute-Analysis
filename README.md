@@ -64,23 +64,19 @@ CelebA is automatically downloaded using torchvision.datasets.CelebA.
 🧠 **Cluster Interpretations**
 
 **Cluster 0**
-Mostly male faces, short hair, no beard, formal appearance.
+- Mostly male faces, short hair, no beard, formal appearance.
 
 **Cluster 1**
-
-Mostly female faces with long hair, makeup, lighter skin.
+- Mostly female faces with long hair, makeup, lighter skin.
 
 **Cluster 2**
-
-Older males, some with glasses, beards, round faces.
+- Older males, some with glasses, beards, round faces.
 
 **Cluster 3**
-
-Young female faces, makeup, stylish/fashion look.
+- Young female faces, makeup, stylish/fashion look.
 
 **Cluster 4**
-
-Mixed gender, diverse poses, outdoor backgrounds.
+- Mixed gender, diverse poses, outdoor backgrounds.
 
 
 🚀 **How to Run This Project**
